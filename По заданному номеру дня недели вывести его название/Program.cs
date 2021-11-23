@@ -6,26 +6,27 @@ if(Days == "1")
 {
     Console.WriteLine("sunday");
 }
-if(Days == "2")
+else if(Days == "2")
 {
     Console.WriteLine("monday");
 }
-if(Days == "3")
+else if(Days == "3")
 {
     Console.WriteLine("thursday");
 }
-if(Days == "4")
+else if(Days == "4")
 {
     Console.WriteLine("wednesday");
-}if(Days == "5")
+}
+else if(Days == "5")
 {
     Console.WriteLine("thersday");
 }
-if(Days == "6")
+else if(Days == "6")
 {
     Console.WriteLine("friday");
 }
-if(Days == "7")
+else if(Days == "7")
 {
     Console.WriteLine("saturday");
 }
