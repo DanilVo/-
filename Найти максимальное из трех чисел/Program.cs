@@ -1,12 +1,12 @@
-﻿int num1 = 2;
-int num2 = 4;
-int num3 = 34;
+﻿int num1 = 5;
+int num2 = 16;
+int num3 = 2;
 int max = num1;
 if(num2>max)
 {
      max = num2;
 }
-else if(num3>max)
+if(num3>max)
 {
      max = num3;
 }
