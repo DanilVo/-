@@ -11,3 +11,4 @@ while(index<max)
     index++;
 }
 Console.WriteLine(num);
+Console.WriteLine(num);
