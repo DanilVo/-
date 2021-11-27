@@ -1,3 +1,3 @@
-﻿Console.WriteLine("enter your num: ");
-string num = Console.ReadLine();
-Console.WriteLine("third int is:" +num[2]);
+﻿// By entering three digits it shows you a third int.
+string num = "123";
+Console.WriteLine("third int is: " +num [2]);
