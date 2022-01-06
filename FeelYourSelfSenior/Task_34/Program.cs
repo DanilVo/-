@@ -3,11 +3,11 @@
 int[] array = new int[12];
 int n = array.Length;
 int a = 0;
-for(int i=0; i<n; i++)
+for (int i = 0; i < n; i++)
 {
-array[i] = new Random().Next(12);
-a = (-1) * array[i];
-Console.WriteLine(a);
+    array[i] = new Random().Next(12);
+    a = (-1) * array[i];
+    Console.WriteLine(a);
 }
 
 
@@ -27,6 +27,6 @@ Console.WriteLine(a);
 // for (i = 0; i < n; i++)
 // {
 //     array[i] = new Random().Next(13);
-    
+
 // }
 // Console.WriteLine(array[i]);
