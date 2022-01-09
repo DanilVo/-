@@ -50,9 +50,9 @@ void showMatrix(int[,] array)
 int[,] square = { { 0, 0 }, { 2, 0 }, { 2, 2 }, { 0, 2 } };
 Console.WriteLine("enter your number:");
 int k = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Оригинальная матрица");
+Console.WriteLine("orginal matrix");
 showMatrix(square);
 Console.WriteLine();
 int[,] result = zoom(k, square);
-Console.WriteLine("Преобразованная матрица");
+Console.WriteLine("rebuilded matrix");
 showMatrix(result);
