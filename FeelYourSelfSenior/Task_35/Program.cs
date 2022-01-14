@@ -1,5 +1,6 @@
 ﻿// Определить, присутствует ли в заданном массиве, некоторое число
 
+
 int[] array = new int[12];
 int n = array.Length;
 Console.WriteLine("What num you want to check?");
