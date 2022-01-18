@@ -14,22 +14,25 @@ int[,] fillArray(int[,] array)
     return array;
 }
 
-int[,] arrangeArray(int[,] arr, int columnNumber)
+int[,] arrangeArray(int[,] arr)
 {
-    int max = 0;
+    // int currentRow = 0;
     for (int row = 0; row < arr.GetLength(0); row++)
     {
-        for (int column = 0; column < arr.GetLength(1); column++)
+        int maxColumn = 0;
+        for (int column = 0; column < arr.GetLength(1) - 1; column++)
         {
-            if (row == columnNumber)
+            for (int i = column + 1; i < arr.GetLength(1); i++)
             {
-                if (arr[row,column] > max)
+                if (arr[row, i] > arr[row,maxColumn])
                 {
-                    max = arr[row,column];
-
+                    maxColumn = i;
                 }
-            Console.Write(max);
             }
+            int temp = arr[row,column];
+            arr[row,column] = arr[row,maxColumn];
+            arr[row,maxColumn] = temp;
+        Console.Write(arr[row,column]);
         }
         Console.WriteLine();
     }
@@ -39,4 +42,4 @@ int[,] arrangeArray(int[,] arr, int columnNumber)
 int[,] array = new int[4, 4];
 int[,] arr = fillArray(array);
 Console.WriteLine();
-arrangeArray(arr, 0);
+arrangeArray(arr);
