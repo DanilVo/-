@@ -19,20 +19,21 @@ int[,] arrangeArray(int[,] arr)
     // int currentRow = 0;
     for (int row = 0; row < arr.GetLength(0); row++)
     {
-        int maxColumn = 0;
-        for (int column = 0; column < arr.GetLength(1) - 1; column++)
+
+        for (int column = 0; column < arr.GetLength(1) ; column++)
         {
+            int maxColumn = column;   // saves us an index of max number in row
             for (int i = column + 1; i < arr.GetLength(1); i++)
             {
-                if (arr[row, i] > arr[row,maxColumn])
+                if (arr[row, i] > arr[row, maxColumn])
                 {
                     maxColumn = i;
                 }
             }
-            int temp = arr[row,column];
-            arr[row,column] = arr[row,maxColumn];
-            arr[row,maxColumn] = temp;
-        Console.Write(arr[row,column]);
+            int temp = arr[row, column];
+            arr[row, column] = arr[row, maxColumn];
+            arr[row, maxColumn] = temp;
+            Console.Write(arr[row, column]);
         }
         Console.WriteLine();
     }
